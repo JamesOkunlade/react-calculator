@@ -1,3 +1,5 @@
+## React calculator
+
 This is a React.js Calculator project.
 
 ## Requirements
@@ -18,7 +20,7 @@ This is a React.js Calculator project.
 
 ## Installation
 
-Visit `https://github.com/JamesOkunlade/react-calculator` to clone the project `cd` into the project directory and run `npm install`
+Visit https://github.com/JamesOkunlade/react-calculator to clone the project `cd` into the project directory and run `npm install`
 
 ## Available Scripts
 
