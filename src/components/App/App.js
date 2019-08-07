@@ -7,9 +7,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Milestone2-project-structure for React.js Calculator project</p>
-        <Display />
-        <ButtonPanel />
+        <p>Milestone3-styling for React.js Calculator project</p>
+        <div className = "calc-body">
+          <Display />
+          <ButtonPanel className = "button-panel"/>
+        </div>
+
       </header>
     </div>
   );

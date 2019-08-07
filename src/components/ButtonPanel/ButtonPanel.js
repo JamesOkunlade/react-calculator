@@ -4,16 +4,14 @@ import Button from '../Button/Button';
 const buttonPanel = () => {
   return (
     <div>
-      <h1>This is the ButtonPanel component</h1>
-      <h2>These are the buttons</h2>
-      <div ClassName = "group-1">
+      <div className = "group group-1">
         <Button name = "AC" />
         <Button name = "+/-" />
         <Button name = "%" />
-        <Button name = "+" />
+        <Button name = "/" />
       </div>
 
-      <div ClassName = "group-2">
+      <div className = "group group-2">
         <Button name = "7" />
         <Button name = "8" />
         <Button name = "9" />
@@ -21,7 +19,7 @@ const buttonPanel = () => {
       </div>
 
 
-      <div ClassName = "group-3">
+      <div className = "group group-3">
         <Button name = "4" />
         <Button name = "5" />
         <Button name = "6" />
@@ -29,7 +27,7 @@ const buttonPanel = () => {
       </div>
 
 
-      <div ClassName = "group-4">
+      <div className = "group group-4">
         <Button name = "1" />
         <Button name = "2" />
         <Button name = "3" />
@@ -37,7 +35,7 @@ const buttonPanel = () => {
       </div>
 
 
-      <div ClassName = "group-5">
+      <div className = "group group-5">
         <Button name = "0" />
         <Button name = "." />
         <Button name = "=" />

@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -21,6 +26,30 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.calc-body {
+  border: 2px solid black;
+  width: 45%;
+  margin-bottom: 100px;
+}
+
+.display {
+  background: #858693;
+  height: 120px;
+}
+
+.group {
+  display: flex;
+  height: 120px;
+  background: #E0E0E0;
+  color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+.button {
+  width: 25%;
+  border-right: 1px solid #fff;
 }
 
 @keyframes App-logo-spin {
