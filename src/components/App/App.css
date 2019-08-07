@@ -42,7 +42,7 @@
 .group {
   display: flex;
   height: 120px;
-  background: #E0E0E0;
+  background: #F5913E;
   color: #000;
   border-bottom: 1px solid #fff;
 }
@@ -51,13 +51,13 @@
   width: 25%;
   border-right: 1px solid #fff;
 }
-.button:last-child {
+/* .button:last-child {
   background: #F5913E;
 }
 
 .group-5 .button:first-child {
   width: 50%;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
