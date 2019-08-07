@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Milestone2-project-structure for React.js Calculator project</p>
-        // <Display />
-        // <ButtonPanel />
+        <Display />
+        <ButtonPanel />
       </header>
     </div>
   );
