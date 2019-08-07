@@ -2,6 +2,11 @@ import React from 'react';
 import Button from '../Button/Button';
 
 const buttonPanel = () => {
+
+  const style = {
+    background: "red"
+  }
+
   return (
     <div>
       <div className = "group group-1">
