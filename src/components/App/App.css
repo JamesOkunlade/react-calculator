@@ -29,7 +29,7 @@
 }
 
 .calc-body {
-  border: 2px solid black;
+  border: 2px solid #fff;
   width: 45%;
   margin-bottom: 100px;
 }
@@ -51,13 +51,7 @@
   width: 25%;
   border-right: 1px solid #fff;
 }
-/* .button:last-child {
-  background: #F5913E;
-}
 
-.group-5 .button:first-child {
-  width: 50%;
-} */
 
 @keyframes App-logo-spin {
   from {
