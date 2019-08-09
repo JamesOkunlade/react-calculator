@@ -14,12 +14,12 @@ const calculate = (dataObj, button) => {
   if (button === '+/-') {
     if (dataObj.next) {
       return {
-        next: (-1 * parseFloat(dataObj.next)).toString();
+        next: (-1 * parseFloat(dataObj.next)).toString()
       };
     }
     if (dataObj.total) {
       return {
-        total: (-1 * parseFloat(dataObj.total)).toString();
+        total: (-1 * parseFloat(dataObj.total)).toString()
       };
     }
     return {};
@@ -30,7 +30,7 @@ const calculate = (dataObj, button) => {
     if (dataObj.next) {
       while (!dataObj.next.includes('.')) {
         return {
-          next: dataObj.next + button;
+          next: dataObj.next + button
         };
       }
     }
@@ -89,12 +89,12 @@ const calculate = (dataObj, button) => {
     if (dataObj.operation) {
       if (dataObj.next) {
         return {
-          next: dataObj.next + button;
+          next: dataObj.next + button
         }
       }
       // if there's no dataObj.next
       return {
-        next: button;
+        next: button
       }
     }
 

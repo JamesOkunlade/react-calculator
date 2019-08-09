@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Display from '../Display/Display';
 import ButtonPanel from '../ButtonPanel/ButtonPanel';
+// eslint-disable-next-line
 import calculate from '../../logic/calculate';
 
 function App() {
