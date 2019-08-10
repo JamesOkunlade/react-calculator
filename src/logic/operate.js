@@ -1,6 +1,6 @@
 import Big from 'big.js';
 
-const operate = (numberOne, numberTwo, operation) => {
+const operate = (numberOne, numberTwo, operation ) => {
   numberOne = new Big(numberOne);
   numberTwo = new Big(numberTwo);
 
@@ -21,8 +21,9 @@ const operate = (numberOne, numberTwo, operation) => {
       return numberOne.div(numberTwo).toString();
       break;
 
+    // SINCE THIS IS FOR CALCULATING PERCENTILE, THE numberTwo is always equal to 100
     case "%":
-      return numberOne.mod(numberTwo).toString();
+      return numberOne.div(numberTwo).toString();
       break;
 
     default:
