@@ -12,7 +12,6 @@ class App extends React.Component {
   }
 
   handleClick = (buttonName) => {
-    console.log(`${buttonName} was clicked`);
     this.setState(calculate(this.state, buttonName));
   }
 
@@ -20,7 +19,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>Milestone5- Event Handlers</p>
           <div className = "calc-body">
             <Display value={this.state.next || this.state.total || '0'} />
             <ButtonPanel className = "button-panel" clickHandler = {this.handleClick} />
