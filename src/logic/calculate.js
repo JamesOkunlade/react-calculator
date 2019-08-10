@@ -124,16 +124,6 @@ const calculate = (dataObj, button) => {
   }
 
 
-  // If an operation is pressed after on an initial operation, update the dataObj.operation before calculating
-  if (dataObj.operation) {
-    return {
-      total: operate(dataObj.total, dataObj.next, dataObj.operation),
-      next: null,
-      operation: button
-    };
-  }
-
-
 
 
   // The user hasn't typed a number yet, just save the operation
