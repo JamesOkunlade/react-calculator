@@ -73,7 +73,6 @@ const calculate = (dataObj, button) => {
     return {
       next: '0.'
     }
-
   }
 
 
@@ -124,6 +123,12 @@ const calculate = (dataObj, button) => {
   }
 
 
+// To ensure continuity in operation without pressing '='
+  if (dataObj.operation && dataObj.next) {
+    dataObj.total = operate(dataObj.total, dataObj.next, dataObj.operation);
+    dataObj.next = null;
+    dataObj.operation = button;
+  }
 
 
   // The user hasn't typed a number yet, just save the operation
