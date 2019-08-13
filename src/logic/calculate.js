@@ -7,13 +7,14 @@ const calculate = (dataObj, button) => {
     return {
       total: null,
       next: null,
-      operation: null
+      operation: null,
+      error: null
     };
   }
 
   if ([0,1,2,3,4,5,6,7,8,9].includes(parseInt(button))) {
-    // If button is '0' and the dataObj is '0' as well irrespective of the operation just return empty dataObj
-    if (button === '0' && dataObj.next === '0') {
+    // To prevent typing unnecessary zeros before an integer e.g. 03 instead of simply 3
+    if (button === '0' && dataObj.next === null && dataObj.total === null) {
       return {}
     }
     // If there is an operation
@@ -79,11 +80,21 @@ const calculate = (dataObj, button) => {
   // If the '=' is pressed and there is a value in dataObj.next and also an operator
   if (button === '=') {
     if (dataObj.next && dataObj.operation) {
-      return {
-        total: operate(dataObj.total, dataObj.next, dataObj.operation),
-        next: null,
-        operation: null
-      };
+      try {
+        return {
+          total: operate(dataObj.total, dataObj.next, dataObj.operation),
+          next: null,
+          operation: null
+        };
+      } catch (e) {
+        return {
+          error: 'Error',
+          next: null,
+          total: null,
+          operation: null
+        }
+      }
+
     } else {
       return {};
     }
@@ -125,9 +136,17 @@ const calculate = (dataObj, button) => {
 
 // To ensure continuity in operation without pressing '='
   if (dataObj.operation && dataObj.next) {
-    dataObj.total = operate(dataObj.total, dataObj.next, dataObj.operation);
-    dataObj.next = null;
-    dataObj.operation = button;
+    try {
+      dataObj.total = operate(dataObj.total, dataObj.next, dataObj.operation);
+      dataObj.next = null;
+      dataObj.operation = button;
+    } catch (e) {
+      dataObj.error = 'Error!!! Press AC to reset';
+      dataObj.next = null;
+      dataObj.total = null;
+      dataObj.operation = null;
+    }
+
   }
 
 
@@ -140,7 +159,8 @@ const calculate = (dataObj, button) => {
   return {
     total: dataObj.next,
     next: null,
-    operation: button
+    operation: button,
+    error: null
   }
 
 }
