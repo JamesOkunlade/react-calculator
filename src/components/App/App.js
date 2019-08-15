@@ -24,7 +24,6 @@ class App extends React.Component {
             <Display value={ this.state.next || this.state.total || this.state.error || '0'} />
             <ButtonPanel className = "button-panel" clickHandler = {this.handleClick} />
           </div>
-
         </header>
       </div>
     );
