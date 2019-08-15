@@ -88,7 +88,7 @@ const calculate = (dataObj, button) => {
         };
       } catch (e) {
         return {
-          error: 'Error',
+          error: 'Error!! Press AC to reset.',
           next: null,
           total: null,
           operation: null
@@ -141,7 +141,7 @@ const calculate = (dataObj, button) => {
       dataObj.next = null;
       dataObj.operation = button;
     } catch (e) {
-      dataObj.error = 'Error!!! Press AC to reset';
+      dataObj.error = 'Error!!! Press AC to reset.';
       dataObj.next = null;
       dataObj.total = null;
       dataObj.operation = null;
