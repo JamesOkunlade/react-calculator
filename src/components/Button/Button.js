@@ -2,9 +2,10 @@ import React from 'react';
 
 const button = (props) => {
 
-  const handleClick = (buttonName) => {
-    return props.clickHandler(props.name);
-  }
+  const { name, clickHandler } = props;
+
+  const handleClick = () => clickHandler(name);
+
 
   const wide = props.wide ? "50%" : "25%"
 
