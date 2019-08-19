@@ -1,46 +1,46 @@
 import React from 'react';
 import Button from '../Button/Button';
 
-const buttonPanel = () => {
+const buttonPanel = ({ clickHandler }) => {
+
+
   return (
     <div>
-      <h1>This is the ButtonPanel component</h1>
-      <h2>These are the buttons</h2>
-      <div ClassName = "group-1">
-        <Button name = "AC" />
-        <Button name = "+/-" />
-        <Button name = "%" />
-        <Button name = "+" />
+      <div className = "group group-1">
+        <Button name = "AC" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "+/-" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "%" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "/" clickHandler = {clickHandler}/>
       </div>
 
-      <div ClassName = "group-2">
-        <Button name = "7" />
-        <Button name = "8" />
-        <Button name = "9" />
-        <Button name = "X" />
-      </div>
-
-
-      <div ClassName = "group-3">
-        <Button name = "4" />
-        <Button name = "5" />
-        <Button name = "6" />
-        <Button name = "-" />
+      <div className = "group group-2">
+        <Button name = "7" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "8" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "9" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "X" clickHandler = {clickHandler}/>
       </div>
 
 
-      <div ClassName = "group-4">
-        <Button name = "1" />
-        <Button name = "2" />
-        <Button name = "3" />
-        <Button name = "+" />
+      <div className = "group group-3">
+        <Button name = "4" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "5" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "6" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "-" clickHandler = {clickHandler}/>
       </div>
 
 
-      <div ClassName = "group-5">
-        <Button name = "0" />
-        <Button name = "." />
-        <Button name = "=" />
+      <div className = "group group-4">
+        <Button name = "1" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "2" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "3" color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "+" clickHandler = {clickHandler}/>
+      </div>
+
+
+      <div className = "group group-5">
+        <Button name = "0" color = "#E0E0E0" wide = "true" clickHandler = {clickHandler}/>
+        <Button name = "." color = "#E0E0E0" clickHandler = {clickHandler}/>
+        <Button name = "=" clickHandler = {clickHandler}/>
       </div>
 
 
