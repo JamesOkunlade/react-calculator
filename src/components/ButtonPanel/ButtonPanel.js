@@ -6,6 +6,11 @@ const buttonPanel = ({ clickHandler }) => {
 
   return (
     <div>
+
+    // <div className = "button" style = {style} onClick ={handleClick}>
+    //   <h3>{props.name}</h3>
+    // </div>
+
       <div className = "group group-1">
         <Button name = "AC" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "+/-" color = "#E0E0E0" clickHandler = {clickHandler}/>
