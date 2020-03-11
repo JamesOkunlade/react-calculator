@@ -11,14 +11,14 @@ const buttonPanel = ({ clickHandler }) => {
     //   <h3>{props.name}</h3>
     // </div>
 
-      <div className = "group group-1">
+      <div className = "group group-1 ">
         <Button name = "AC" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "+/-" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "%" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "/" clickHandler = {clickHandler}/>
       </div>
 
-      <div className = "group group-2">
+      <div className = "group group-2 ">
         <Button name = "7" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "8" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "9" color = "#E0E0E0" clickHandler = {clickHandler}/>
@@ -26,7 +26,7 @@ const buttonPanel = ({ clickHandler }) => {
       </div>
 
 
-      <div className = "group group-3">
+      <div className = "group group-3 ">
         <Button name = "4" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "5" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "6" color = "#E0E0E0" clickHandler = {clickHandler}/>
@@ -34,7 +34,7 @@ const buttonPanel = ({ clickHandler }) => {
       </div>
 
 
-      <div className = "group group-4">
+      <div className = "group group-4 ">
         <Button name = "1" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "2" color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "3" color = "#E0E0E0" clickHandler = {clickHandler}/>
@@ -42,7 +42,7 @@ const buttonPanel = ({ clickHandler }) => {
       </div>
 
 
-      <div className = "group group-5">
+      <div className = "group group-5 ">
         <Button name = "0" color = "#E0E0E0" wide = "true" clickHandler = {clickHandler}/>
         <Button name = "." color = "#E0E0E0" clickHandler = {clickHandler}/>
         <Button name = "=" clickHandler = {clickHandler}/>
